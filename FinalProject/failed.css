@@ -1,0 +1,53 @@
+.holder-holder{
+    display: flex;
+    margin-top: 15vw;
+    flex-direction: column;
+}
+.info-holder{
+    display: flex;
+    flex-direction: row;
+    max-height: 350px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2vw;
+}
+.Console-Image img{
+    max-height: 25vw;
+    flex: 1;
+    border: 6px solid rgb(228, 8, 8);
+}
+.console-caption{
+    min-height: 25vw;
+    flex: 1;
+    max-height: 25vw;
+    max-width: 25vw;
+    background-color: rgb(204, 13, 13);
+    border: 6px solid rgb(228, 8, 8);
+    color: white;
+    word-wrap: break-word; 
+    overflow-wrap:break-word;
+}
+.right-side{
+    flex-direction: row-reverse;
+}
+.console-name{
+    display: flex;
+    text-align: center;
+    border: 6px solid rgb(228, 8, 8);
+    background-color: white;
+    color: red;
+    font-family: sans-serif;
+    min-width: 30vw;
+    max-width: 40vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3vw;
+    justify-content: center;
+}
+.console-name p{
+    margin: 0;
+}
+.console-name.right-side{
+    margin-left: auto;
+}
+
