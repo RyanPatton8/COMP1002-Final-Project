@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- more meta tags -->
+    <!-- more meta tags/favicon -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="headerfooter.css">
 </head>
 <body>
     <header>
         <section class="Main-Logo">
-            <img src="Images/rednintendo.png" alt="Nintendo Logo">
+            <img src="Images/Logo/rednintendolarge.png" alt="Large Nintendo Logo">
         </section>
         <nav class="nav-bar">
-            <!-- more html pages -->
-            <a href="index.html">Home</a>
-            <a href="index.html">About</a>
-            <a href="index.html">Contact Us</a>
-            <a href="index.html">Products</a>
+            <a href="home.html">Home</a>
+            <a href="home.html">About</a>
+            <a href="home.html">Contact Us</a>
+            <a href="home.html">Products</a>
         </nav>
     </header>
+    
     <main class="home-main">
-        <section class="holder-holder">
+        <section class="video-holder">
             <iframe src="https://www.youtube.com/embed/Vb0ul2M6C9o?si=GAKZuXqco0-s30Gz" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
         </section>
+
         <article class="consoles-home">
             <h1 id="slogan">
                 <p>NOW YOU'RE PLAYING WITH SUPER POWER!</p>
             </h1>
             <!-- reorder this with media query -->
-            <!-- replace n64 with another nintendo console -->
             <section class="console-images-home">
                     <a href="index.html">
-                        <img src="Images/n64 png.png">
+                        <img src="Images/Consoles/Gameandwatch.png">
                     </a>
                     <a href="index.html">
-                        <img src="Images/nes png.png">
+                        <img src="Images/Consoles/nes.png">
                     </a>
                     <a href="index.html">
-                        <img src="Images/snes png.png">
+                        <img src="Images/Consoles/snes.png">
                     </a>
                     <a href="index.html">
-                        <img src="Images/NES_Zapper png.webp">
+                        <img src="Images/Consoles/NES_Zapper.webp">
                     </a>
                     <a href="index.html">
-                        <img src="Images/gameboy png.png">
+                        <img src="Images/Consoles/gameboy.png">
                     </a>
+                    <!-- animate this one -->
                     <a href="index.html" id="console-label">SEE OUR PRODUCTS</a>
                     <a href="index.html" id="power-glove">
-                        <img src="Images/powerglove png.jpg">
+                        <img src="Images/Consoles/powerglove.jpg">
                     </a>
             </section>
         </article>
     </main>
-    <!-- make a footer -->
-    <script src="app.js"></script>
+    
+    <footer>
+        <!-- small company logo -->
+        <div id="footer-logo">
+            <img src="Images/Logo/rednintendosmall.png" alt="Small Nintendo Logo">
+        </div>
+        <!-- mini nav bar -->
+        <nav id="footer-nav">
+            <a href="home.html">Home</a>
+            <a href="home.html">About</a>
+            <a href="home.html">Contact Us</a>
+            <a href="home.html">Products</a>
+        </nav>
+        <!-- copyright -->
+        <p id="footer-trademark">Nintendo&reg;</p>
+        <script src="home.js"></script>
+    </footer>
 </body>
 </html>
