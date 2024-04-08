@@ -1,0 +1,123 @@
+/* holds the logo and nav bar as a whole and puts them in column */
+header{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+/* flexbox to hold the main logo */
+.Main-Logo{
+    justify-content: center;
+    display: flex;
+    padding: 2%;
+    background-color: rgb(185, 1, 1);
+}
+/* actual logo image */
+.Main-Logo img{
+    border: 10px solid white;
+    border-style:inset;
+    padding: 20px;
+    max-height: 10vw;
+}
+/* box to hold all the navbar elements */
+.nav-bar{
+    display: flex;
+    border: 2px solid rgb(161, 15, 15);
+    justify-content: space-around;
+    background-color: rgb(204, 13, 13);
+}
+/* nav bar elements themselves */
+.nav-bar a{
+    /* display block allows the link item to be clickable anywhere on the element  */
+    display: block;
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    /* set these to transparent so i can fade in other design on hover */
+    background-color: transparent;
+    border: 4px solid transparent;
+    padding: 20px;
+    transition: color 0.3s ease, background-color 0.025s ease, border 0.15s ease;
+}
+/* hover effect */
+.nav-bar a:hover{
+    border: 4px solid red;
+    color: red;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+/* flexbox to hold all footer items */
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 5px solid white;
+    background-color: rgb(146, 7, 14);
+    padding: 2.5rem 0 0 0;
+}
+/* i feel like the rest is extremely self explanatory if you read the header css */
+#footer-logo{
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+
+#footer-logo img{
+    border: 4px solid white;
+    border-style:inset;
+    padding: 10px;
+}
+
+#footer-nav{
+    display: flex;
+    justify-content: center;
+}
+#footer-nav a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1vw;
+    color: white;
+    background-color: transparent;
+    border: 4px solid transparent;
+    padding: 20px 20px 5px 20px;
+    transition: color 0.3s ease, transform .2s ease;
+}
+
+#footer-nav a:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgb(209, 78, 78)) drop-shadow(0 0 100px rgb(209, 78, 78));
+}
+
+#footer-trademark{
+    display: flex;
+    color: white;
+    justify-content:center;
+}
+/* media queries for 640 and 360 the rest is dynamic enough*/
+@media screen and (max-width: 640px) {
+    .Main-Logo img{
+        max-height: 4vw;
+    }
+    .nav-bar a{
+        font-size: .7rem;
+    }
+    #footer-nav a{
+        font-size: .5rem;
+    }
+    #footer-trademark{
+        font-size: .5rem;
+    }
+}
+/* the words wrap at this point so i had to adjust padding for consistency */
+@media screen and (max-width: 370px) {
+    #contact-us{
+        padding:15px 20px;
+    }
+}
