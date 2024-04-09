@@ -1,0 +1,73 @@
+/* establish a nice canvas to work on that is dynamic */
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(65, 4, 17);
+    flex: 1;
+}
+/* place to hold all main content */
+.products-main{
+    display:flex;
+    border: 2px solid green;
+}
+/* add padding to both sections on left and right */
+.products-main section{
+    margin: 2rem 5rem;
+}
+/* create section to hold images and description of accessories */
+.accessories{
+    display:flex;
+    flex-direction: column;
+    border: 2px solid blue;
+}
+/* create section to hold images and description of consoles as well as photos of games */
+.consoles{
+    display:flex;
+    flex-direction: column;
+    border: 2px blue solid;
+}
+/* headings for both sections */
+.product-heading{
+    margin-top: 0;
+    display:flex;
+    font-size: 3vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 2px purple solid;
+    justify-content: center;
+}
+/* holder for accessories */
+.accessories .accessory{
+    display:flex;
+    flex-direction: column;
+    border: 2px solid orange;
+    width: 30vw;
+}
+/* caption for each accessory */
+.accessories .accessory figcaption{
+    text-align: center;
+    border-top: 2px solid orange;
+    color: white;
+    word-wrap: break-word; 
+    overflow-wrap:break-word;
+}
+/* make accessory img fit */
+.accessories .accessory img{
+    width: 100%;
+    height: 100%;
+}
+/* holder for consoles */
+.console{
+    display:flex;
+    flex-direction: row-reverse;
+    border: 2px solid orange;
+}
+/* holder for the image in console to ensure right size without overflow */
+.console .console-image{
+    width: 10vw;
+}
+.console-image img{
+    width:100%;
+}
