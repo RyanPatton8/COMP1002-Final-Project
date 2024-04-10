@@ -129,7 +129,7 @@ iframe{
 .console-images-home a img:hover {
     transform: scale(1.1);
 }
-/* media queries forgoing below 1024, 960, 650 */
+/* media queries for 960, 640, 360 */
 @media screen and (max-width: 1024px) {
     .video-holder{
         padding-top: 5rem;
@@ -145,7 +145,7 @@ iframe{
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
     .video-holder{
         padding-top: 3rem;
     }
@@ -157,13 +157,12 @@ iframe{
     }
     .console-images-home #console-label {
         order: -1;
-        padding:2rem 8rem;
+        padding:3rem 10rem 3rem 10rem;
         margin:5rem 0 2.5rem 0;
-        font-size: 8vw;
     }
     .console-images-home a{
         width: 30%;
         height: 20%;
-        margin: 5rem 2rem;
+        margin: 5rem .25;
     }
 }

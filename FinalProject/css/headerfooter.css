@@ -104,9 +104,6 @@ footer{
 @media screen and (max-width: 640px) {
     .Main-Logo img{
         max-height: 4vw;
-        border: 4px solid white;
-        border-style:inset;
-        padding: 10px;
     }
     .nav-bar a{
         font-size: .7rem;
