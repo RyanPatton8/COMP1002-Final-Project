@@ -7,7 +7,7 @@ mainHeader.innerHTML = `
 </div>
 <nav class="nav-bar">
     <a href="home.html">Home</a>
-    <a href="home.html">About</a>
+    <a href="aboutme.html">About</a>
     <a href="home.html" id="contact-us">Contact Us</a>
     <a href="products.html">Products</a>
 </nav>

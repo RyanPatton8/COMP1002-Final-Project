@@ -2,7 +2,7 @@
 <html lang="en"> <!-- The root element of the document specifying the language as English -->
 <head>
     <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
-    <meta viewport="width=device-width, initial-scale=1.0"> <!-- Sets the viewport to ensure proper scaling and dimensions on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport to ensure proper scaling and dimensions on mobile devices -->
     <title>About Fusajiro Yamauchi</title> <!-- The title of the document shown in the browser's title bar or tab -->
     <link rel="stylesheet" href="/css/aboutme.css"> <!-- Links to an external stylesheet for the about me page styling -->
     <link rel="stylesheet" href="/css/headerfooter.css"> <!-- Links to another external stylesheet for styling the header and footer -->
@@ -13,10 +13,10 @@
     <i class="fas fa-gamepad"></i> <!-- A FontAwesome icon for a gamepad -->
     <header id="main-header"></header> <!-- The main header of the page, currently empty -->
     <div class="logo-container">
-        <img src="/Images/About Me/worldofnintendo.png" alt="Nintendo Logo" id="logo1"> <!-- Displays the first Nintendo logo image -->  
+        <img src="/Images/AboutMe/worldofnintendo.png" alt="Nintendo Logo" id="logo1"> <!-- Displays the first Nintendo logo image -->  
     </div>
     <main id="main-container">
-        <img src="/Images/About Me/founder.jpg" alt="Fusajiro Yamauchi" id="profile-image"> <!-- Displays an image of Fusajiro Yamauchi -->
+        <img src="/Images/AboutMe/founder.jpg" alt="Fusajiro Yamauchi" id="profile-image"> <!-- Displays an image of Fusajiro Yamauchi -->
         <article class="bio">
             <h1>Fusajiro Yamauchi</h1> <!-- The main heading of the biography section -->
             <p>Founder of Nintendo, Fusajiro Yamauchi started the company in 1889 as a playing card manufacturer in Kyoto, Japan. 
@@ -39,11 +39,11 @@
         <section id="production">
             <h2>Production</h2> <!-- Heading for the production section -->
             <p>Nintendo's products are known for their quality and innovation, produced in state-of-the-art facilities around the world.</p>
-            <class id="factory-link"> <!-- Incorrect use of <class>, should be a different tag like <div> -->
+            <div id="factory-link"> <!-- Incorrect use of <class>, should be a different tag like <div> -->
                 <p>For an exclusive look into a Nintendo factory, watch this video:</p>
                 <br class="video-placement"> <!-- <br> tags do not have classes, this is likely intended for spacing -->
-                <iframe src="https://www.youtube.com/embed/lTkQEUEZSe8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- Embeds a video from YouTube -->
-            </class>    
+                <iframe src="https://www.youtube.com/embed/lTkQEUEZSe8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- Embeds a video from YouTube -->
+            </div>    
         </section>
     </main>
     <footer id="main-footer">

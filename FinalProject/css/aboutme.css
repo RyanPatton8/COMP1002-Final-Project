@@ -12,7 +12,7 @@ body::before {
     position: fixed; /* Fixes the position relative to the viewport, so it's always full-screen */
     top: 0; left: 0; /* Positions the pseudo-element at the top-left corner */
     width: 100%; height: 100%; /* Sizes the pseudo-element to cover the entire viewport */
-    background: url('/Images/About Me/Nintendo.jpg'); /* Sets the background image */
+    background: url('/Images/AboutMe/Nintendo.jpg'); /* Sets the background image */
     background-size: cover; /* Ensures the background image covers the entire element */
     filter: blur(4px); /* Applies a blur effect to the background image */
     z-index: -1; /* Places the pseudo-element behind all other content */
