@@ -12,7 +12,7 @@ window.addEventListener("scroll", function() {
         
     // If the scroll percentage is more than 20, scale up the slogan
     if(windowWidth > 1024 && scrollPercentage > 20) {
-        slogan.style.transform = "scale(1.6)";
+        slogan.style.transform = "scale(1.3)";
     }
     else if(windowWidth > 950 && scrollPercentage > 20) {
         slogan.style.transform = "scale(1.2)";
