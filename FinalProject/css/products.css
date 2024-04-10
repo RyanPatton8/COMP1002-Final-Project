@@ -3,7 +3,7 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, rgb(119, 12, 17), rgb(48, 7, 7),rgb(92, 9, 13));
+    background: linear-gradient(to right, rgb(30, 11, 73), rgb(54, 20, 133),rgb(30, 11, 73));
     overflow-x: hidden;
     flex: 1;
 }
@@ -19,7 +19,7 @@ body{
     align-items: center;
 }
 #product-head p{
-    margin-top: 3rem;
+    margin: 3rem;
     text-align: center;
     border: 2px solid white;
     font-size: 4vw;
@@ -128,7 +128,7 @@ body{
 }
 /* css for games header */
 .games-heading{
-    margin-top: 3rem;
+    margin: 3rem;
     display:flex;
     font-size: 3vw;
     font-family: sans-serif;
@@ -139,20 +139,76 @@ body{
     border-radius: 10px;
     padding: 15px;
     justify-content: center;
-    
+    text-align: center;
 }
+/* box to hold all of the games */
 .games-holder{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+/* the games themselves */
 .games-holder img{
-    width: 8vw;
+    width: 15vw;
+    height: 15vw;
     margin:0 10px 20px;
+}
+/* media queries for going below 1024, 960, 640, 360 */
+/* affecting sizes and shifting things to a more vertical format */
+@media screen and (max-width: 1024px) {
+    .accessories{
+        flex-direction: row;
+    }
+    .consoles{
+        order: -1;
+    }
+    .console figcaption{
+        font-size: 3vw;
+        margin: 1rem 1rem;
+    }
+    .accessories .accessory figcaption{
+        font-size: 2.5vw;
+    }
+    .products-main{
+        flex-direction: column;
+    }
+    .games-heading{
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width: 960px) {
-    .products-main{
+    .product-heading{
+        order: -1;
+        font-size: 5vw;
+    }
+    .accessories{
         flex-direction: column;
+    }
+    .accessories .accessory{
+        width: 50vw;
+    }
+    #product-head p{
+        margin-bottom: 1rem;
+    }
+    .games-heading{
+        font-size: 5vw;
+        margin: 4vw 3vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .console{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .games-holder img{
+        width: 25vw;
+        height: 25vw;
+    }
+    .console img{
+        width: 40vw;
     }
 }
