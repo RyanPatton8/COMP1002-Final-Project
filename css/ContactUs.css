@@ -2,6 +2,8 @@ body{
     margin: auto;/* Centers the content horizontally */
     display: flex;/* Uses flexbox layout */
     flex-direction: column;/* Arranges child elements vertically */
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bb22e5fe-8761-457f-98db-2390525d2f80/def1eco-79d3f54b-5bbe-4cec-ba2d-c5478fa2de95.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JiMjJlNWZlLTg3NjEtNDU3Zi05OGRiLTIzOTA1MjVkMmY4MFwvZGVmMWVjby03OWQzZjU0Yi01YmJlLTRjZWMtYmEyZC1jNTQ3OGZhMmRlOTUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.E9ZxoVCIi5euoi8qZ0NUpVFBw0FGv-13bGLdjWOYn18'); 
+    background-size: cover;
     background-color: rgb(65, 4, 17);
     overflow-x: hidden;/* Hides horizontal overflow */
     flex: 1;/* Allows the body to grow to fill available space */
