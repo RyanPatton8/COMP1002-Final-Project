@@ -6,7 +6,7 @@ mainHeader.innerHTML = `
     <img src="/Images/Logo/rednintendolarge.png" alt="Large Nintendo Logo">
 </div>
 <nav class="nav-bar">
-    <a href="home.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="aboutme.html">About</a>
     <a href="ContactUs.html" id="contact-us">Contact Us</a>
     <a href="products.html">Products</a>
@@ -18,9 +18,9 @@ mainFooter.innerHTML = `
     <img src="/Images/Logo/rednintendosmall.png" alt="Small Nintendo Logo">
 </div>
 <nav id="footer-nav">
-    <a href="home.html">Home</a>
-    <a href="home.html">About</a>
-    <a href="home.html">Contact Us</a>
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About</a>
+    <a href="ContactUs.html">Contact Us</a>
     <a href="products.html">Products</a>
 </nav>
 
