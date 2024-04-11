@@ -1,0 +1,214 @@
+/* establish a nice canvas to work on that is dynamic */
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(30, 11, 73), rgb(54, 20, 133),rgb(30, 11, 73));
+    overflow-x: hidden;
+    flex: 1;
+}
+/* place to hold all main content */
+.products-main{
+    display:flex;
+    justify-content: space-between;
+}
+/* basically a banner message for the page */
+#product-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#product-head p{
+    margin: 3rem;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 4vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    background-color: rgb(170, 18, 18);
+    color: white;
+    word-wrap: break-word; 
+    overflow-wrap:break-word;
+}
+/* create section to hold images and description of accessories */
+.accessories{
+    display:flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(105, 9, 9);
+    border: 10px solid rgb(77, 7, 7);
+}
+/* create section to hold images and description of consoles as well as photos of games */
+.consoles{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* headings for both sections */
+.product-heading{
+    display:flex;
+    font-size: 3vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    background-color: white;
+    color: rgb(207, 14, 14);
+    border: 5px solid rgb(207, 14, 14);
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+/* holder for accessories */
+.accessories .accessory{
+    display:flex;
+    flex-direction: column;
+    border: 4px solid white;
+    border-radius: 8px;
+    width: 30vw;
+}
+/* caption for each accessory */
+.accessories .accessory figcaption{
+    text-align: center;
+    border-top: 3px solid white;
+    font-size: 1vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    background-color: rgb(170, 18, 18);
+    color: white;
+    word-wrap: break-word; 
+    overflow-wrap:break-word;
+}
+/* make accessory img fit */
+.accessories .accessory img{
+    width: 100%;
+    height: 100%;
+}
+/* holder for consoles */
+.console{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: rgb(105, 9, 9);
+}
+/* the image itself */
+.console img{
+    width: 20vw;
+    margin: 2vw 5vw;
+}
+/* design for figcaption */
+.console figcaption {
+    display: flex;
+    margin-left: 5rem;
+    border: 4px white solid;
+    padding: 15px;
+    font-size: 1vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgb(141, 12, 12);
+    word-wrap: break-word; 
+    overflow-wrap:break-word;
+}
+/* section outside of main that holds the games container and header */
+.games{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2rem 2rem 2rem;
+    border-radius: 10px;
+    background-color: rgb(117, 10, 10);
+    border: 10px solid white;
+    align-items: center;
+}
+/* css for games header */
+.games-heading{
+    margin: 3rem;
+    display:flex;
+    font-size: 3vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(170, 18, 18);
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
+}
+/* box to hold all of the games */
+.games-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* the games themselves */
+.games-holder img{
+    width: 15vw;
+    height: 15vw;
+    margin:0 10px 20px;
+}
+/* media queries for going below 1024, 960, 640, 360 */
+/* affecting sizes and shifting things to a more vertical format */
+@media screen and (max-width: 1024px) {
+    .accessories{
+        flex-direction: row;
+    }
+    .consoles{
+        order: -1;
+    }
+    .console figcaption{
+        font-size: 3vw;
+        margin: 1rem 1rem;
+    }
+    .accessories .accessory figcaption{
+        font-size: 2.5vw;
+    }
+    .products-main{
+        flex-direction: column;
+    }
+    .games-heading{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .product-heading{
+        order: -1;
+        font-size: 5vw;
+    }
+    .accessories{
+        flex-direction: column;
+    }
+    .accessories .accessory{
+        width: 50vw;
+    }
+    #product-head p{
+        margin-bottom: 1rem;
+    }
+    .games-heading{
+        font-size: 5vw;
+        margin: 4vw 3vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .console{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .games-holder img{
+        width: 25vw;
+        height: 25vw;
+    }
+    .console img{
+        width: 40vw;
+    }
+}
