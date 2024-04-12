@@ -3,7 +3,7 @@ const mainFooter = document.querySelector("#main-footer");
 
 mainHeader.innerHTML = `
 <div class="Main-Logo">
-    <img src="/Images/Logo/rednintendolarge.png" alt="Large Nintendo Logo">
+    <img src="Images/Logo/rednintendolarge.png" alt="Large Nintendo Logo">
 </div>
 <nav class="nav-bar">
     <a href="index.html">Home</a>
@@ -15,7 +15,7 @@ mainHeader.innerHTML = `
 
 mainFooter.innerHTML = `
 <div id="footer-logo">
-    <img src="/Images/Logo/rednintendosmall.png" alt="Small Nintendo Logo">
+    <img src="Images/Logo/rednintendosmall.png" alt="Small Nintendo Logo">
 </div>
 <nav id="footer-nav">
     <a href="index.html">Home</a>

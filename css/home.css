@@ -24,7 +24,7 @@ body{
     width: 100%;
     height: 100%;
     /* place my image */
-    background-image: url('/Images/Backdrops/Homebackdrop.webp');
+    /* background-image: url(''); */
     /* put in the center */
     background-position: center;
     /* make it so the image doesn't move when scrolling */
